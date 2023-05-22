@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Factory Room Material
+  m_Name: Flag_Nigeria_Mat
   m_Shader: {fileID: 4800000, guid: 13b4f684fcd83dd419c1ff3dcc55023f, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -41,7 +41,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 5cac868c71cfd4e47a27afd7733e1164, type: 3}
+        m_Texture: {fileID: 2800000, guid: 991b05eb2d49f6344a6828a214d3eac1, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
