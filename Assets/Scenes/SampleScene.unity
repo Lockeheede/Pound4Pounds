@@ -470,7 +470,7 @@ Camera:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_RenderingPath: -1
+  m_RenderingPath: 1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
   m_TargetEye: 0
@@ -1034,6 +1034,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7705ef3960970074da4e48a49ed33a2e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0c1b26039f27bc8489366ef362f2f9a4, type: 2}
     - target: {fileID: -6722085885383957590, guid: 7705ef3960970074da4e48a49ed33a2e, type: 3}
       propertyPath: m_Type
       value: 1
