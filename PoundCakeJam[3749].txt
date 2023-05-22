@@ -1,0 +1,24 @@
+=>Pound Cake Jam<=
+
+->Idea #1: Pound for Pounds
+:The cakes are pan. Use the unPounder to turn them pounds. Get paid 1 poundCoin for each poundcake
+
+->Game Loop: Conveor Belt
+:The pancakes come in on a conveor belt. 
+::Regular pancakes have a green aroma (+1)
+::Bad pancakes have a white aroma (-1)
+::Super pancakes have a gold aroma (+3)
+::conveor eventually speeds up
+::there is a timer of 1 to 5 minutes to get as many poundCoins as possible
+
+->Story: Britian Again??
+:Britian has taken over Nigeria. You are a lowly cake unPounder Technician who needs to make British/Nigerian Pounds and eventually convert them to naira to fund a revolution and re-gain independence. 
+:Everyone loves a good poundCake. Make them in as little time as possible to get the poundCoin you need for funding. 
+
+->Mechanics
+:2D Design using Thomas Brush's techniques
+:SpawnManager that holds the 3 different cakes and spawns them randomly
+:A button for the technician to press to make the unPounder operate
+::unPounder has a cooldown, it can't be spammed
+:timer that goes up to 5 minutes
+:score points based on the number of successful poundCakes made! 
