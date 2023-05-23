@@ -1,14 +1,13 @@
 
-Library/PackageCache/com.unity.burst@1.6.6/.Runtime/hostmac/lld
 
-[Ll]ibrary/
-[Tt]emp/
-[Oo]bj/
-[Bb]uild/
-[Bb]uilds/
-Assets/AssetStoreTools*
-[Ll]ogs/
-UserSettings/
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/Assets/AssetStoreTools*
+/[Ll]ogs/
+/UserSettings/
 
 # Visual Studio cache directory
 .vs/
