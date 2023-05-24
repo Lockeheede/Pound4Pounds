@@ -15,9 +15,10 @@ GameObject:
   - component: {fileID: 8431178800922063054}
   - component: {fileID: 8431178799349833779}
   - component: {fileID: -7555304704945997640}
+  - component: {fileID: -515687494910865820}
   m_Layer: 0
   m_Name: WhitePancake
-  m_TagString: Untagged
+  m_TagString: WhitePancake
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -142,6 +143,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91d5b8887ac704043bb534805acd054c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-515687494910865820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1710850915019950173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08c41aa2023144547a9224ecf9364fd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_GameManager: {fileID: 0}
+  points: -1
 --- !u!1001 &2867730049664519563
 PrefabInstance:
   m_ObjectHideFlags: 0

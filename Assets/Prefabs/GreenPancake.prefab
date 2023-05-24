@@ -15,9 +15,10 @@ GameObject:
   - component: {fileID: 1031505810}
   - component: {fileID: 1379781099293755526}
   - component: {fileID: -1178316322749896152}
+  - component: {fileID: -7329085682733244708}
   m_Layer: 0
   m_Name: GreenPancake
-  m_TagString: Untagged
+  m_TagString: GreenPancake
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -142,6 +143,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91d5b8887ac704043bb534805acd054c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-7329085682733244708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7115610056650030849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08c41aa2023144547a9224ecf9364fd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_GameManager: {fileID: 0}
+  points: 2
 --- !u!1001 &5966611154591513303
 PrefabInstance:
   m_ObjectHideFlags: 0
