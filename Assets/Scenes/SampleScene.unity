@@ -761,8 +761,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 530272523}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.2145783, y: 3.922922, z: 0}
-  m_LocalScale: {x: 2.1112006, y: 2.4236858, z: 1}
+  m_LocalPosition: {x: 1.2145783, y: 5.3642, z: 0}
+  m_LocalScale: {x: 2.1112006, y: 3.8650517, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1655777545}
@@ -2521,8 +2521,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 20
+  startingPos: {x: 0, y: 0, z: 0}
   poundEffect: {fileID: 7606133298451023125, guid: 16fb2610ff081e14491ff43e0a0ad413, type: 3}
   poundLocation: {fileID: 1144933713}
+  stateTimer: 0
 --- !u!54 &1655777547
 Rigidbody:
   m_ObjectHideFlags: 0
