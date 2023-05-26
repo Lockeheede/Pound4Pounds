@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class Pounding : MonoBehaviour
 {
+    [field: SerializeField] public GameManager m_GameManager;
     public float speed = 20f;
     private Rigidbody m_RigidBody;
     public Vector3 startingPos = new Vector3(0,0,0);
-    private bool pounded = false;
-    private float poundReset = 1.5f;
     public GameObject poundEffect;
     public GameObject poundLocation;
+    public float colliderTimer = 0.0f;
     public enum PoundingState
     {
         PoundDown,
@@ -30,6 +30,7 @@ public class Pounding : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Debug.Log(colliderTimer);
         switch (poundingState)
         {
             case PoundingState.PoundDown:
@@ -77,25 +78,21 @@ public class Pounding : MonoBehaviour
     void PoundEffect()
     {
         Instantiate(poundEffect, poundLocation.transform);
-        pounded = true;
         Invoke("StopLift", 0.3f);
     }
-
-    void StopLift()
-    {
-        m_RigidBody.isKinematic = true;
-        Debug.Log("Cooldown");
-        Invoke("StopKinematics", 1.5f);
-    }
-
-    void StopKinematics()
-    {
-        m_RigidBody.isKinematic = false;
-        pounded = false;
-    }
-
+  
     private void OnCollisionEnter(Collision collision)
     {
+
         Debug.Log("Blaoh! " + collision.gameObject);
+        if (collision.gameObject.tag == "GreenPancake")
+        { 
+            m_GameManager.ChangeScore(2); 
+        }
+
+        if (collision.gameObject.tag == "WhitePancake") 
+        { 
+            m_GameManager.ChangeScore(-1);
+        }
     }
 }

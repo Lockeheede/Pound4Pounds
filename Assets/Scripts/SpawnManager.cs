@@ -6,8 +6,6 @@ public class SpawnManager : MonoBehaviour
 {
     public GameObject[] cakePrefabs;
 
-    private float spawnLimitLeft = -22;
-
     private float startDelay = 1.0f;
     // Start is called before the first frame update
     void Start()
