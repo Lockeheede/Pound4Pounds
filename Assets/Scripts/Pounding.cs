@@ -93,4 +93,9 @@ public class Pounding : MonoBehaviour
         m_RigidBody.isKinematic = false;
         pounded = false;
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log("Blaoh! " + collision.gameObject);
+    }
 }
