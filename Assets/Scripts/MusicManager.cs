@@ -20,7 +20,7 @@ public class MusicManager : MonoBehaviour
     void Update()
     {
         float CurTime = Time.time;
-        if (LastNotePlayedTime == -1 || CurTime > LastNotePlayedTime + 0.45f)
+        if (LastNotePlayedTime == -1 || CurTime > LastNotePlayedTime + 0.30f)
         {
             LastNotePlayedTime = CurTime;
             PlayNextNote();
