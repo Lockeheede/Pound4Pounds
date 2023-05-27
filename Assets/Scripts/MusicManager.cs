@@ -12,13 +12,23 @@ public class MusicManager : MonoBehaviour
     int CurNote = 0;
     float LastNotePlayedTime = -1;
 
+    float StartTime;
     MusicManager()
     {
      //   PianoKeys = new AudioClip[PianoNotes.Length];
+        
+    }
+
+    private void Start()
+    {
+        StartTime = Time.time;
     }
 
     void Update()
     {
+        if (Time.time < StartTime + 1.0)
+            return;
+
         float CurTime = Time.time;
         if (LastNotePlayedTime == -1 || CurTime > LastNotePlayedTime + 0.30f)
         {

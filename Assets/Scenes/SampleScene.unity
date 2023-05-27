@@ -1246,6 +1246,175 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 812333130}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &835987358
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 835987361}
+  - component: {fileID: 835987360}
+  - component: {fileID: 835987359}
+  m_Layer: 0
+  m_Name: Music Manager (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!82 &835987359
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835987358}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &835987360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835987358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6c2c6942cd6e094a8b363d18575ef7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PianoKeys:
+  - {fileID: 8300000, guid: 58d4d26eff77e1b469706ce094d57da2, type: 3}
+  - {fileID: 8300000, guid: 679302756f39d284bb87e55c1c2410ba, type: 3}
+  - {fileID: 8300000, guid: d93711fd0be322b4bbf61e6ea697fc76, type: 3}
+  - {fileID: 8300000, guid: 6988c694784c8f3459ffdaa7f0abf8d0, type: 3}
+  - {fileID: 8300000, guid: 8c867ce7bb52c464ba0b3a1b841bf64c, type: 3}
+  - {fileID: 8300000, guid: fed3499f8145e21489eca31559c2d54d, type: 3}
+  - {fileID: 8300000, guid: 966a25a87eebb3549afd8487b9404e55, type: 3}
+  - {fileID: 8300000, guid: 752f6f28fbe060f4d9c2acf5e66c133e, type: 3}
+  - {fileID: 8300000, guid: 52414ffb5a1e2c84182ddb4a92e58505, type: 3}
+  - {fileID: 8300000, guid: 3875df65cb312494ab0a81baa510cba5, type: 3}
+  - {fileID: 8300000, guid: 25f51a407656a1841a36f1efc7aa50db, type: 3}
+  - {fileID: 8300000, guid: d7da27d38d0818d45babb94d04be620e, type: 3}
+  - {fileID: 8300000, guid: 1536ce690c18a484fbf2dd76422d3030, type: 3}
+  - {fileID: 8300000, guid: 4231f56b4b20eca478e09aaaab47b3c7, type: 3}
+  - {fileID: 8300000, guid: 368e1e0711f6a5f44857093d03f4f120, type: 3}
+  - {fileID: 8300000, guid: 285563c2dbf57b041bc6913228f19603, type: 3}
+  - {fileID: 8300000, guid: d1a2b4ff0dfdc474c971fd4d1bc0ead9, type: 3}
+  - {fileID: 8300000, guid: f2aa7400eec6ada4f986fb1467ab2811, type: 3}
+  - {fileID: 8300000, guid: fee395b2cc263f3409e5bf7de8274a72, type: 3}
+  - {fileID: 8300000, guid: 6d81c75e5b1ee9e48b10f30683b1240c, type: 3}
+  - {fileID: 8300000, guid: 4a19a4f75e115aa47b6beb000bb7d0ca, type: 3}
+  - {fileID: 8300000, guid: cd0bcec709ea5294fb1435788e18a36f, type: 3}
+  - {fileID: 8300000, guid: a4946f1db1ba80146a4f85b2d1764941, type: 3}
+  - {fileID: 8300000, guid: e5b5398fd360f144cbaa98073df3f102, type: 3}
+  SongNotes: 1200000012000000150000001400000012000000100000000b00000010000000100000001400000012000000100000000b0000000800000004000000100000001400000012000000100000000e0000000b0000000e0000001200000010000000100000000f0000000d0000000d000000
+  AudioSrc:
+  - {fileID: 835987359}
+--- !u!4 &835987361
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835987358}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &905739696
 GameObject:
   m_ObjectHideFlags: 0
@@ -2670,7 +2839,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: cd0bcec709ea5294fb1435788e18a36f, type: 3}
   - {fileID: 8300000, guid: a4946f1db1ba80146a4f85b2d1764941, type: 3}
   - {fileID: 8300000, guid: e5b5398fd360f144cbaa98073df3f102, type: 3}
-  SongNotes: 12000000150000001400000012000000100000000b00000010000000100000001400000012000000100000000b0000000800000004000000100000001400000012000000100000000e0000000b0000000e0000001200000010000000100000000f0000000d0000000d000000
+  SongNotes: 120000000d00000012000000150000001400000012000000100000000b000000100000001400000012000000100000000b00000008000000100000001400000012000000100000000f0000000b0000000f00000012000000100000000f000000
   AudioSrc:
   - {fileID: 1712297509}
 --- !u!4 &1712297508
