@@ -6,10 +6,13 @@ public class Pounding : MonoBehaviour
 {
     [field: SerializeField] public GameManager m_GameManager;
     public float speed = 20f;
+    private bool bHitPancake = false;
     private Rigidbody m_RigidBody;
     public Vector3 startingPos = new Vector3(0,0,0);
     public GameObject poundEffect;
     public GameObject poundLocation;
+    public GameObject whiteCakePrefab;
+    public GameObject greenCakePrefab;
     public float colliderTimer = 0.0f;
     public enum PoundingState
     {
@@ -51,6 +54,7 @@ public class Pounding : MonoBehaviour
     void PoundNeutral()
     {
         m_RigidBody.velocity = Vector3.zero;
+        bHitPancake = false;
         if (Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.Mouse0))
         {
             poundingState = PoundingState.PoundDown;
@@ -77,22 +81,27 @@ public class Pounding : MonoBehaviour
 
     void PoundEffect()
     {
-        Instantiate(poundEffect, poundLocation.transform);
-        Invoke("StopLift", 0.3f);
+        
     }
   
     private void OnCollisionEnter(Collision collision)
     {
 
         Debug.Log("Blaoh! " + collision.gameObject);
-        if (collision.gameObject.tag == "GreenPancake")
+        if (collision.gameObject.tag == "GreenPancake" && bHitPancake == false)
         { 
-            m_GameManager.ChangeScore(2); 
+            m_GameManager.ChangeScore(2);
+            bHitPancake = true;
+            Instantiate(greenCakePrefab, new Vector3(collision.gameObject.transform.position.x, collision.gameObject.transform.position.y + 2f, collision.gameObject.transform.position.z),  collision.gameObject.transform.rotation);
+            Destroy(collision.gameObject);
         }
 
-        if (collision.gameObject.tag == "WhitePancake") 
-        { 
+        if (collision.gameObject.tag == "WhitePancake" && bHitPancake == false) 
+        {
             m_GameManager.ChangeScore(-1);
+            bHitPancake = true;
+            Instantiate(whiteCakePrefab, new Vector3(collision.gameObject.transform.position.x, collision.gameObject.transform.position.y + 2f, collision.gameObject.transform.position.z), collision.gameObject.transform.rotation);
+            Destroy(collision.gameObject);
         }
     }
 }
