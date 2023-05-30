@@ -22,19 +22,46 @@ public class MusicManager : MonoBehaviour
     private void Start()
     {
         StartTime = Time.time;
+        GameObject GameMgrObj = GameObject.Find("GameManager");
+        GameManager GameMgr = GameMgrObj.GetComponent<GameManager>();
+        if (GameMgr != null)
+        {
+            GameMgr.ScoreChangedCallback += ScoreChangedCallback;
+        }
+    }
+
+    void ScoreChangedCallback(int currentScore, int change)
+    {
+        if (change > 0)
+        {
+            PlayNextNote();
+        }
+        else
+        {
+
+        }
+    }
+
+    private void OnDestroy()
+    {
+        GameObject GameMgrObj = GameObject.Find("GameManager");
+        GameManager GameMgr = GameMgrObj.GetComponent<GameManager>();
+        if (GameMgr != null)
+        {
+            GameMgr.ScoreChangedCallback -= ScoreChangedCallback;
+        }     
     }
 
     void Update()
     {
-        if (Time.time < StartTime + 1.0)
+      /*  if (Time.time < StartTime + 1.0)
             return;
 
         float CurTime = Time.time;
         if (LastNotePlayedTime == -1 || CurTime > LastNotePlayedTime + 0.30f)
         {
             LastNotePlayedTime = CurTime;
-            PlayNextNote();
-        }
+        }*/
     }
 
     void PlayNextNote()

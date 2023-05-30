@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Naira_UI : MonoBehaviour
 {
     public float SpinDurationSeconds = 1.0f;
-
+    public TMPro.TextMeshPro TMPText;
     private float SpinStartTime = -1.0f;
 
     private Vector3 StartEuler = Vector3.zero;
@@ -14,7 +15,32 @@ public class Naira_UI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Invoke("StartSpin", 3);
+        GameObject GameMgrObj = GameObject.Find("GameManager");
+        GameManager GameMgr = GameMgrObj.GetComponent<GameManager>();
+        if (GameMgr != null)
+        {
+            GameMgr.ScoreChangedCallback += ScoreChangedCallback;
+        }
+    }
+
+    private void OnDestroy()
+    {
+        GameObject GameMgrObj = GameObject.Find("GameManager");
+        GameManager GameMgr = GameMgrObj.GetComponent<GameManager>();
+        if (GameMgr != null)
+        {
+            GameMgr.ScoreChangedCallback -= ScoreChangedCallback;
+        }     
+    }
+
+    void ScoreChangedCallback(int currentScore, int change)
+    {
+        TMPText.text = "x " + currentScore;
+
+        if (change > 0)
+        {
+            Invoke("StartSpin", 0);
+        }
     }
 
     // Update is called once per frame
@@ -47,7 +73,6 @@ public class Naira_UI : MonoBehaviour
         {
             gameObject.transform.rotation = Quaternion.Euler(StartEuler);
             SpinStartTime = -1.0f;
-            Invoke("StartSpin", 3);
             return;
         }
 

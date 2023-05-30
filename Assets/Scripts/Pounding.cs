@@ -87,7 +87,6 @@ public class Pounding : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
 
-        Debug.Log("Blaoh! " + collision.gameObject);
         if (collision.gameObject.tag == "GreenPancake" && bHitPancake == false)
         { 
             m_GameManager.ChangeScore(2);

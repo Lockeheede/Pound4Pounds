@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: ConveyorBelt_Mat
+  m_Name: Pounder_Mat
   m_Shader: {fileID: 4800000, guid: 13b4f684fcd83dd419c1ff3dcc55023f, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -41,7 +41,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 8bbd3afe158faa74a8482bf3f4b2342a, type: 3}
+        m_Texture: {fileID: 2800000, guid: bc6eacae427a46841af82de3edd88402, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -63,9 +63,9 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _GlossMapScale: 1
-    - _Glossiness: 0.7
+    - _Glossiness: 0.575
     - _GlossyReflections: 1
-    - _Metallic: 0.259
+    - _Metallic: 0.689
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
