@@ -45,11 +45,14 @@ public class MusicManager : MonoBehaviour
     private void OnDestroy()
     {
         GameObject GameMgrObj = GameObject.Find("GameManager");
-        GameManager GameMgr = GameMgrObj.GetComponent<GameManager>();
-        if (GameMgr != null)
+        if (GameMgrObj != null)
         {
-            GameMgr.ScoreChangedCallback -= ScoreChangedCallback;
-        }     
+            GameManager GameMgr = GameMgrObj.GetComponent<GameManager>();
+            if (GameMgr != null)
+            {
+                GameMgr.ScoreChangedCallback -= ScoreChangedCallback;
+            }
+        }
     }
 
     void Update()
