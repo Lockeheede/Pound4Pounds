@@ -5213,9 +5213,9 @@ MonoBehaviour:
   CoinStartHeight: -6.25
   MaxCoinHeight: -4.5
   CoinSpeed: 5
-  SwooshStart: -1
+  SwooshStart: 0
   SwooshEnd: 1
-  SwooshSpeed: 0.1
+  SwooshSpeed: 5
   DebugStart: 0
 --- !u!1 &2092928027
 GameObject:
