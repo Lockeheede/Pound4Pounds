@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!23 &66208625 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -4010980779470094544, guid: c6912b7bc6019ca42bc0305219949901, type: 3}
+  m_PrefabInstance: {fileID: 748992124}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &69303028 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -3874883035867178668, guid: c8a0067e9fafea649ad60d7e3fe8c839, type: 3}
@@ -1884,7 +1889,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c6912b7bc6019ca42bc0305219949901, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5859259852128964746, guid: c6912b7bc6019ca42bc0305219949901, type: 3}
       propertyPath: m_Layer
@@ -1894,7 +1899,8 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -2964225117148605397, guid: c6912b7bc6019ca42bc0305219949901, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c6912b7bc6019ca42bc0305219949901, type: 3}
 --- !u!4 &763713655 stripped
 Transform:
@@ -5203,9 +5209,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Coin: {fileID: 1420077149}
   Swoosh: {fileID: 160372143}
+  SwooshRenderer: {fileID: 66208625}
   CoinStartHeight: -6.25
   MaxCoinHeight: -4.5
   CoinSpeed: 5
+  SwooshStart: -1
+  SwooshEnd: 1
+  SwooshSpeed: 0.1
   DebugStart: 0
 --- !u!1 &2092928027
 GameObject:

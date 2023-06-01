@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 [ExecuteInEditMode]
@@ -7,9 +8,16 @@ public class AddCoinFX : MonoBehaviour
 {
     public GameObject Coin;
     public GameObject Swoosh;
+    public Renderer SwooshRenderer;
+
     public float CoinStartHeight = -5.81f;
     public float MaxCoinHeight = -5.0f;
     public float CoinSpeed = 1.0f;
+
+    public float SwooshStart = -1.0f;
+    public float SwooshEnd = 1.0f;
+    public float SwooshSpeed = 0.1f;
+    private float SwooshU = -1.0f;
 
     public bool DebugStart = false;
     enum eCoinState
@@ -50,7 +58,7 @@ public class AddCoinFX : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    { // Swoosh.GetComponent<Renderer>().material.SetFloat("_UOffset", 0.5f);
         if (DebugStart == true)
         {
             DebugStart = false;
@@ -73,12 +81,23 @@ public class AddCoinFX : MonoBehaviour
                     CoinState = eCoinState.CoinSwoosh;
                     Coin.SetActive(false);
                     Swoosh.SetActive(true);
+                    SwooshU = SwooshStart;
+                    SwooshRenderer.material.SetFloat("_UOffset", SwooshU);
                 }
             }
             CoinZRotation += Time.deltaTime * 355;
             Quaternion rotator = Coin.transform.rotation;
             Coin.transform.rotation = Quaternion.Euler(Coin.transform.rotation.eulerAngles.x, CoinZRotation,Coin.transform.rotation.eulerAngles.z );
 
+        }
+        else if (CoinState == eCoinState.CoinSwoosh)
+        {
+            SwooshU += Time.deltaTime * SwooshSpeed;
+            SwooshRenderer.material.SetFloat("_UOffset", SwooshU);
+            if (SwooshU >= SwooshEnd)
+            {
+                CoinState = eCoinState.SpinUICoin;
+            }
         }
     }
 }

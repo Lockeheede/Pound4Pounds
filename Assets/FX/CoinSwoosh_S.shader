@@ -5,6 +5,7 @@ Shader "Unlit/CoinSwoosh_S"
         _MainTex ("Texture", 2D) = "white" {}
 				_Color("Color", Color) = (1,1,1,1)
 				_ScrollRate ("Scroll Rate", Range(0,100)) = 1.0
+				_UOffset("UOffset", Range(-1,1)) = 1.0
     }
     SubShader
     {
@@ -41,6 +42,7 @@ Shader "Unlit/CoinSwoosh_S"
             float4 _MainTex_ST;
 						float _ScrollRate;
 						float4 _Color;
+						float _UOffset;
 
             v2f vert (appdata v)
             {
@@ -56,7 +58,8 @@ Shader "Unlit/CoinSwoosh_S"
                 // sample the texture
 								float deltaX = _ScrollRate * _Time.y + i.uv.x;
 
-                fixed4 col = tex2D(_MainTex, float2(deltaX, i.uv.y)) * _Color;
+             //   fixed4 col = tex2D(_MainTex, float2(deltaX, i.uv.y)) * _Color;
+						fixed4 col = tex2D(_MainTex, i.uv.xy + float2(_UOffset, 0)) * _Color;
 								col.w = 0;
                 // apply fog
             //    UNITY_APPLY_FOG(i.fogCoord, col);
