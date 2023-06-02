@@ -9853,7 +9853,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5993087010927481452}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 16.695652, y: 2.471624, z: -4.6412897}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -9949,6 +9949,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 58f50c8ea052d8e45a73a16af2fab5a8, type: 2}
+    - target: {fileID: 359312179909449575, guid: 409376a7f91e3a34990c6c77554f6afb, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 409376a7f91e3a34990c6c77554f6afb, type: 3}
       propertyPath: m_Name
       value: CoinSwoosh2
@@ -10029,6 +10033,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 58f50c8ea052d8e45a73a16af2fab5a8, type: 2}
+    - target: {fileID: 359312179909449575, guid: d1f2864773f6896459a40e540e341f9e, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d1f2864773f6896459a40e540e341f9e, type: 3}
       propertyPath: m_Name
       value: CoinSwoosh3
@@ -10265,21 +10273,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e543de4182398e5458534475060f280d, type: 3}
   m_PrefabInstance: {fileID: 5993087011841399080}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &5993087010295542516
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6911566597624521849}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ef12a1202c08684eac937ef7091952e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SpinDurationSeconds: 1
-  TMPText: {fileID: 0}
-  CoinSwooshPrefab: {fileID: 0}
 --- !u!1001 &5993087011875254725
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10335,6 +10328,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 58f50c8ea052d8e45a73a16af2fab5a8, type: 2}
+    - target: {fileID: 359312179909449575, guid: c947205eb4b80b44c8f3d69da1a67f7c, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c947205eb4b80b44c8f3d69da1a67f7c, type: 3}
       propertyPath: m_Name
       value: CoinSwoosh4

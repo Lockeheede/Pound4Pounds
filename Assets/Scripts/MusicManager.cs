@@ -10,7 +10,6 @@ public class MusicManager : MonoBehaviour
     int CurAudioSrc = 0;
 
     int CurNote = 0;
-    float LastNotePlayedTime = -1;
 
     float StartTime;
     MusicManager()

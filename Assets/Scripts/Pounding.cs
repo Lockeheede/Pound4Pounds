@@ -91,7 +91,7 @@ public class Pounding : MonoBehaviour
         { 
             m_GameManager.ChangeScore(2);
             bHitPancake = true;
-            Instantiate(greenCakePrefab, new Vector3(collision.gameObject.transform.position.x, collision.gameObject.transform.position.y + 2f, collision.gameObject.transform.position.z),  collision.gameObject.transform.rotation);
+            Instantiate(greenCakePrefab, new Vector3(collision.gameObject.transform.position.x, collision.gameObject.transform.position.y, collision.gameObject.transform.position.z),  collision.gameObject.transform.rotation);
             Destroy(collision.gameObject);
         }
 
@@ -99,7 +99,7 @@ public class Pounding : MonoBehaviour
         {
             m_GameManager.ChangeScore(-1);
             bHitPancake = true;
-            Instantiate(whiteCakePrefab, new Vector3(collision.gameObject.transform.position.x, collision.gameObject.transform.position.y + 2f, collision.gameObject.transform.position.z), collision.gameObject.transform.rotation);
+            Instantiate(whiteCakePrefab, new Vector3(collision.gameObject.transform.position.x, collision.gameObject.transform.position.y, collision.gameObject.transform.position.z), collision.gameObject.transform.rotation);
             Destroy(collision.gameObject);
         }
     }

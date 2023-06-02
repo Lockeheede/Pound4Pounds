@@ -28,7 +28,7 @@ public class ConveyorBelt : MonoBehaviour
         curAngle += RotationRate * Time.deltaTime;
         for (int i = 0; i < WheelTransforms.Count; i++)
         {
-            Quaternion rotationQuat = Quaternion.EulerRotation(new Vector3(-curAngle, 0, 0));
+            Quaternion rotationQuat = Quaternion.Euler(new Vector3(-curAngle, 0, 0));
                 WheelTransforms[i].localRotation = rotationQuat;
         }
     }
