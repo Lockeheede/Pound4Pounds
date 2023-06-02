@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-[ExecuteInEditMode]
+//[ExecuteInEditMode]
 public class AddCoinFX : MonoBehaviour
 {
     public GameObject Coin;
-    public GameObject Swoosh;
-    public Renderer SwooshRenderer;
+    public GameObject[] SwooshList;
+   // 
+    public ParticleSystem Particles1;
+    public ParticleSystem Particles2;
+    public Naira_UI NairiUI;
 
     public float CoinStartHeight = -5.81f;
     public float MaxCoinHeight = -5.0f;
@@ -18,6 +21,10 @@ public class AddCoinFX : MonoBehaviour
     public float SwooshEnd = 1.0f;
     public float SwooshSpeed = 0.1f;
     private float SwooshU = -1.0f;
+
+    private GameObject Swoosh;
+    private Renderer SwooshRenderer;
+    public int Score = 0;
 
     public bool DebugStart = false;
     enum eCoinState
@@ -35,20 +42,18 @@ public class AddCoinFX : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-     //   Coin.active = true;
-     //   Swoosh.active = false;
-      //  Coin.transform.position = new Vector3(-2.745652f, CoinStartHeight, 13.66129f);
     }
 
     void Awake()
     {
-        Coin.SetActive(false);
-        Swoosh.SetActive(false);
-
+        StartEffect();
     }
 
     void StartEffect()
     {
+        int range = Random.Range(0, SwooshList.Length);
+        Swoosh = SwooshList[range];
+        SwooshRenderer = Swoosh.GetComponentInChildren<Renderer>();
         Coin.SetActive(true);
         Swoosh.SetActive(false);
         Coin.transform.localPosition = new Vector3(-2.745652f, CoinStartHeight, 13.66129f);
@@ -83,6 +88,7 @@ public class AddCoinFX : MonoBehaviour
                     Swoosh.SetActive(true);
                     SwooshU = SwooshStart;
                     SwooshRenderer.material.SetFloat("_UOffset", SwooshU);
+                    Particles1.Play();
                 }
             }
             CoinZRotation += Time.deltaTime * 355;
@@ -97,6 +103,16 @@ public class AddCoinFX : MonoBehaviour
             if (SwooshU >= SwooshEnd)
             {
                 CoinState = eCoinState.SpinUICoin;
+                Particles2.Play();
+                StateTimer = Time.time;
+                NairiUI.StartSpin(Score);
+            }
+        }
+        else if (CoinState == eCoinState.SpinUICoin)
+        {
+            if (Time.time > StateTimer + 3.0f)
+            {
+                GameObject.Destroy(gameObject);
             }
         }
     }

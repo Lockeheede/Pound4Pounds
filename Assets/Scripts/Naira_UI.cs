@@ -12,6 +12,9 @@ public class Naira_UI : MonoBehaviour
     private Vector3 StartEuler = Vector3.zero;
     private float EndZ = 0;
 
+    public GameObject CoinSwooshPrefab;
+    int Score = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,11 +38,17 @@ public class Naira_UI : MonoBehaviour
 
     void ScoreChangedCallback(int currentScore, int change)
     {
-        TMPText.text = "x " + currentScore;
-
         if (change > 0)
         {
-            Invoke("StartSpin", 0);
+            GameObject CoinSwoosh = Instantiate(CoinSwooshPrefab, new Vector3(2.874f, 7.1605f, -13.2626f), Quaternion.identity);
+            AddCoinFX CoinFX = CoinSwoosh.GetComponent<AddCoinFX>();
+            CoinFX.NairiUI = this;
+            CoinFX.Score = change;
+        }
+        else
+        {
+            Score = currentScore;
+            TMPText.text = "x " + Score;
         }
     }
 
@@ -49,8 +58,11 @@ public class Naira_UI : MonoBehaviour
         UpdateSpin();
     }
 
-    public void StartSpin()
+    public void StartSpin(int inScore)
     {
+        Score += inScore;
+        TMPText.text = "x " + Score;
+
         if (SpinStartTime != -1.0f)
         {
             return;
@@ -58,7 +70,7 @@ public class Naira_UI : MonoBehaviour
 
         SpinStartTime = Time.time;
         StartEuler = gameObject.transform.rotation.eulerAngles;
-        EndZ = StartEuler.y + 2880;
+        EndZ = StartEuler.y + 1440;
     }
 
     private void UpdateSpin()
