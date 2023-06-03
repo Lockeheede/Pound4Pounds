@@ -4846,7 +4846,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: fa8cca9f3776ced4cb87b969a93e6bce, type: 2}
+  - {fileID: 2100000, guid: 5882ab7cbdde0f147add8b73a0591776, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9743,7 +9743,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: fa8cca9f3776ced4cb87b969a93e6bce, type: 2}
+  - {fileID: 2100000, guid: 5882ab7cbdde0f147add8b73a0591776, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10259,7 +10259,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e543de4182398e5458534475060f280d, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e543de4182398e5458534475060f280d, type: 3}

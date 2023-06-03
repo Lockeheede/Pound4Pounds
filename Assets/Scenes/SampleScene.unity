@@ -803,7 +803,7 @@ MonoBehaviour:
   - {fileID: 1859460934}
   - {fileID: 1700651781}
   - {fileID: 1411430770}
-  RotationRate: 4
+  RotationRate: 140
 --- !u!1 &344636264
 GameObject:
   m_ObjectHideFlags: 0
@@ -907,7 +907,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: c8a0067e9fafea649ad60d7e3fe8c839, type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c8a0067e9fafea649ad60d7e3fe8c839, type: 3}
       propertyPath: m_LocalScale.x
@@ -1184,7 +1184,7 @@ MonoBehaviour:
   - {fileID: 1372554080}
   - {fileID: 1693993002}
   - {fileID: 1351958459}
-  RotationRate: 4
+  RotationRate: 140
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1512,7 +1512,7 @@ MonoBehaviour:
   - {fileID: 1379224266}
   - {fileID: 662917875}
   - {fileID: 1575182744}
-  RotationRate: 4
+  RotationRate: 140
 --- !u!1 &559565394
 GameObject:
   m_ObjectHideFlags: 0
@@ -2045,6 +2045,7 @@ MonoBehaviour:
   SongNotes: 1200000012000000150000001400000012000000100000000b00000010000000100000001400000012000000100000000b0000000800000004000000100000001400000012000000100000000e0000000b0000000e0000001200000010000000100000000f0000000d0000000d000000
   AudioSrc:
   - {fileID: 835987359}
+  BadNote: {fileID: 0}
 --- !u!4 &835987361
 Transform:
   m_ObjectHideFlags: 0
@@ -2994,7 +2995,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: c8a0067e9fafea649ad60d7e3fe8c839, type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c8a0067e9fafea649ad60d7e3fe8c839, type: 3}
       propertyPath: m_LocalScale.x
@@ -3168,7 +3169,7 @@ MonoBehaviour:
   - {fileID: 1087898315}
   - {fileID: 763713655}
   - {fileID: 70648934}
-  RotationRate: 4
+  RotationRate: 140
 --- !u!1 &1288508855
 GameObject:
   m_ObjectHideFlags: 0
@@ -3790,6 +3791,67 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1001 &1549073662
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5993087010927481443, guid: 4959e2880e73d6e4789b159f24eddea6, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5993087010927481443, guid: 4959e2880e73d6e4789b159f24eddea6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.874
+      objectReference: {fileID: 0}
+    - target: {fileID: 5993087010927481443, guid: 4959e2880e73d6e4789b159f24eddea6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.1605
+      objectReference: {fileID: 0}
+    - target: {fileID: 5993087010927481443, guid: 4959e2880e73d6e4789b159f24eddea6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -13.2626
+      objectReference: {fileID: 0}
+    - target: {fileID: 5993087010927481443, guid: 4959e2880e73d6e4789b159f24eddea6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5993087010927481443, guid: 4959e2880e73d6e4789b159f24eddea6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5993087010927481443, guid: 4959e2880e73d6e4789b159f24eddea6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5993087010927481443, guid: 4959e2880e73d6e4789b159f24eddea6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5993087010927481443, guid: 4959e2880e73d6e4789b159f24eddea6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5993087010927481443, guid: 4959e2880e73d6e4789b159f24eddea6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5993087010927481443, guid: 4959e2880e73d6e4789b159f24eddea6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5993087010927481452, guid: 4959e2880e73d6e4789b159f24eddea6, type: 3}
+      propertyPath: m_Name
+      value: CoinVFX
+      objectReference: {fileID: 0}
+    - target: {fileID: 5993087010927481452, guid: 4959e2880e73d6e4789b159f24eddea6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4959e2880e73d6e4789b159f24eddea6, type: 3}
 --- !u!4 &1558790316 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -3874883035867178668, guid: c8a0067e9fafea649ad60d7e3fe8c839, type: 3}
@@ -4181,6 +4243,7 @@ MonoBehaviour:
   SongNotes: 120000000d00000012000000150000001400000012000000100000000b000000100000001400000012000000100000000b00000008000000100000001400000012000000100000000f0000000b0000000f00000012000000100000000f000000
   AudioSrc:
   - {fileID: 1712297509}
+  BadNote: {fileID: 8300000, guid: 8cf588b964f824e4089632cda81a2f93, type: 3}
 --- !u!4 &1712297508
 Transform:
   m_ObjectHideFlags: 0
@@ -4658,7 +4721,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: c8a0067e9fafea649ad60d7e3fe8c839, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c8a0067e9fafea649ad60d7e3fe8c839, type: 3}
       propertyPath: m_LocalScale.x

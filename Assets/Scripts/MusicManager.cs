@@ -8,6 +8,7 @@ public class MusicManager : MonoBehaviour
     public int[] SongNotes;
     public AudioSource[] AudioSrc;
     int CurAudioSrc = 0;
+    public AudioClip BadNote;
 
     int CurNote = 0;
 
@@ -37,6 +38,13 @@ public class MusicManager : MonoBehaviour
         }
         else
         {
+            if (CurAudioSrc >= AudioSrc.Length)
+            {
+                CurAudioSrc = 0;
+            }
+            AudioSrc[CurAudioSrc].clip = BadNote;
+            AudioSrc[CurAudioSrc].Play();
+            CurAudioSrc++;
 
         }
     }
