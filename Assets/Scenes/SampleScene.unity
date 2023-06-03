@@ -1277,7 +1277,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
   m_Name: 
@@ -1324,8 +1324,8 @@ MonoBehaviour:
       colorBlindnessType: 0
       colorBlindnessStrength: 1
   m_Resources: {fileID: 11400000, guid: d82512f9c8e5d4a4d938b575d47f88d4, type: 2}
-  m_ShowToolkit: 0
-  m_ShowCustomSorter: 0
+  m_ShowToolkit: 1
+  m_ShowCustomSorter: 1
   breakBeforeColorGrading: 0
   m_BeforeTransparentBundles: []
   m_BeforeStackBundles: []
@@ -2087,7 +2087,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 859939332}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
   m_Name: 
@@ -4109,13 +4109,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_GameManager: {fileID: 588379665}
-  speed: 20
+  speed: 40
   startingPos: {x: 0, y: 0, z: 0}
   poundEffect: {fileID: 7606133298451023125, guid: 16fb2610ff081e14491ff43e0a0ad413, type: 3}
   poundLocation: {fileID: 1144933713}
   whiteCakePrefab: {fileID: 6502110856841485106, guid: 029641812582e0445ba3b6c60f8559e1, type: 3}
   greenCakePrefab: {fileID: 6502110856841485106, guid: 76ed85b9f85637d4ab51ce35879d3f53, type: 3}
   colliderTimer: 0
+  pounderStayDownTime: 0.25
   stateTimer: 0
 --- !u!54 &1655777547
 Rigidbody:
