@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Naira_Mat
-  m_Shader: {fileID: 4800000, guid: 263c8a70c349443479830f026cf05f48, type: 3}
+  m_Shader: {fileID: 4800000, guid: 13b4f684fcd83dd419c1ff3dcc55023f, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
@@ -77,6 +77,6 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 1, g: 0.032075405, b: 0.032075405, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []
