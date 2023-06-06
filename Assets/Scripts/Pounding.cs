@@ -14,7 +14,7 @@ public class Pounding : MonoBehaviour
     public GameObject whiteCakePrefab;
     public GameObject greenCakePrefab;
     public float colliderTimer = 0.0f;
-    public float pounderStayDownTime = 1.0f;
+    public float poundDurationSeconds = 1.0f;
 
     public enum PoundingState
     {
@@ -77,7 +77,7 @@ public class Pounding : MonoBehaviour
     void PoundDown()
     {
         m_RigidBody.AddForce(Vector3.down * speed);
-        if (Time.time - stateTimer > pounderStayDownTime)
+        if (Time.time - stateTimer > poundDurationSeconds)
             poundingState = PoundingState.PoundUp;
     }
 
